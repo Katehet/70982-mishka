@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Sergey Vikhrov](https://up.htmlacademy.ru/adaptive/12/user/70982).
-* Наставник: `Неизвестно`.
+* Наставник: [Василика Климова](https://htmlacademy.ru/profile/id415397).
 
 ---
 
