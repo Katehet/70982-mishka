@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Мишка | Каталог товаров</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="container">
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="head logo">
-      </a>
-      <nav class="main-nav">
+      <div class="page-header__common container">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="head logo"></a>
         <button class="main-nav__toggle" type="button">Меню</button>
+      </div>
+      <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -29,15 +30,15 @@
           </ul>
         </div>
       </nav>
-    <h1 class="page-header__title main-title">
+    <h1 class="page-header__title page-title">
       Каталог товаров
     </h1>
     </header>
     <main class="main-page">
-      <section class="products">
+      <section class="products container">
         <article class="products__item bunny-bouncer">
           <div class="products__image">
-            <img src="http://placehold.it/260x195" width="265" height="195" alt="Зайчик-попрыгайчик">
+            <img src="http://placehold.it/260x195" width="260" height="195" alt="Зайчик-попрыгайчик">
           </div>
           <h1 class="products__name">
             Зайчик-попрыгайчик
@@ -78,7 +79,7 @@
           </div>
         </article>
       </section>
-      <section class="making-process">
+      <section class="making-process container">
         <h1 class="making-process__header">
           Процесс производства
         </h1>
@@ -90,37 +91,38 @@
           мы сняли для вас подробное видео<br>
           о том, как появляются наши товары.
         </p>
-        <a href="form.html">Сделать заказ</a>
+        <a class="button" href="form.html">Сделать заказ</a>
       </section>
       <footer class="page-footer">
-        <div class="page-footer__social social">
-          <b class="visually-hidden">Мы есть в соцсетях!</b>
-          <ul class="social__list">
-            <li class="social__item"><a class="social__item--instagram" href="#">Инстаграм</a></li>
-            <li class="social__item"><a class="social__item--facebook" href="#">Фейсбук</a></li>
-            <li class="social__item"><a class="social__item--twitter" href="#">Твиттер</a></li>
-          </ul>
+        <div class="container">
+          <div class="page-footer__social social">
+            <b class="visually-hidden">Мы есть в соцсетях!</b>
+            <ul class="social__list">
+              <li class="social__item"><a class="social__item--instagram" href="#">Инстаграм</a></li>
+              <li class="social__item"><a class="social__item--facebook" href="#">Фейсбук</a></li>
+              <li class="social__item"><a class="social__item--twitter" href="#">Твиттер</a></li>
+            </ul>
+          </div>
         </div>
-      <div class="designed">
-        <span class="designed__author">Разработано</span>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="designed__logo visually-hidden">HTML Academy</a>
-      </div>
+        <div class="designed container">
+          <span class="designed__author">Разработано</span>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="designed__logo">HTML Academy</a>
+        </div>
       </footer>
     </main>
-  </div>
-  <div class="modal visually-hidden">
-    <div class="modal__wrapper">
-      <h1 class="modal__title">
-        Добавить в корзину
-      </h1>
-      <span class="modal__select">Выберите размер:</span>
-      <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
-        <input class="modal__size modal__size--small" type="radio" name="size" id="small" value="small"><label for="small">S</label>
-        <input class="modal__size modal__size--medium" type="radio" name="size" id="medium" value="medium"><label for="medium">M</label>
-        <input class="modal__size modal__size--large" type="radio" name="size" id="large" value="large"><label for="large">L</label>
-        <input class="modal__submit" type="submit" value="Добавить">
-      </form>
+    <div class="modal visually-hidden">
+      <div class="modal__wrapper"> <!-- or container?-->
+        <h1 class="modal__title">
+          Добавить в корзину
+        </h1>
+        <span class="modal__select">Выберите размер:</span>
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
+          <input class="modal__size modal__size--small" type="radio" name="size" id="small" value="small"><label for="small">S</label>
+         <input class="modal__size modal__size--medium" type="radio" name="size" id="medium" value="medium"><label for="medium">M</label>
+         <input class="modal__size modal__size--large" type="radio" name="size" id="large" value="large"><label for="large">L</label>
+         <input class="modal__submit" type="submit" value="Добавить">
+       </form>
+     </div>
     </div>
-  </div>
   </body>
 </html>
