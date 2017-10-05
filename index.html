@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Мишка | Главная</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="container">
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="head logo">
-      </a>
-      <nav class="main-nav">
+      <div class="page-header__common container">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="http://placehold.it/86x35" width="86" height="35" alt="head logo"></a>
         <button class="main-nav__toggle" type="button">Меню</button>
+      </div>
+      <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -33,12 +34,14 @@
       Милые штучки ручной работы для дома       <!-- Изображение фоном -->
     </h1>
     </header>
-    <main class="main-page">
-      <div class="main-page__submenu submenu">
-        <a class="interior" href="catalog.html">Предметы интерьера</a>
-        <a class="toys" href="catalog.html">Детские игрушки</a>
+    <section class="main-page__submenu submenu">
+      <div class="submenu container">
+        <a class="submenu__interior" href="catalog.html">Предметы интерьера</a>
+        <a class="submenu__toys" href="catalog.html">Детские игрушки</a>
       </div>
-      <section class="item-card">
+    </section>
+    <main class="main-page">
+      <section class="item-card container">
         <h2 class="item-card__name">Вязаные корзинки</h2>
         <span class="item-card__promo">Товар недели</span>
         <p class="item-card__description">
@@ -66,9 +69,9 @@
           <span class="price-block__price">Цена:</span>
           <span class="price-block__value">990 руб.</span>
         </div>
-        <a class="item-card__book" href="#">Заказать</a>
+        <a class="item-card__book button" href="#">Заказать</a>
       </section>
-      <section class="about">
+      <section class="about container">
         <h2 class="about__title">
           Коротко о нас:
         </h2>
@@ -81,7 +84,7 @@
           <li class="features-list__item features-list__item--package">Поставляется в подарочной упаковке</li>
         </ul>
       </section>
-      <section class="comments">
+      <section class="comments container">
         <div class="comments__wrapper slider">
         <h2 class="comments__title">
           Отзывы:
@@ -110,9 +113,10 @@
           <button class="comments__prev">Предыдущий</button>
           <button class="comments__next">Следующий</button>
         </div>
-        <a class="comments__write" href="#">Написать отзыв</a>
+        <a class="comments__write button" href="#">Написать отзыв</a>
       </section>
       <section class="contacts">
+        <div class="container">
         <h2 class="contacts__title">
           Контакты
         </h2>
@@ -125,41 +129,42 @@
             д. 19/8, офис 101
           </p>
         </div>
+        </div>
       <map class="contacts__map" name="map">
         <img class="contacts__map-image" src="http://placehold.it/320x457" height="457" alt="Карта недоступна">
       </map>
-      <br>
-      <a class="contacts__contact-us" href="#">Напишите нам</a>
+        <a class="contacts__contact-us button container" href="#">Напишите нам</a>
       </section>
       <footer class="page-footer">
-        <div class="page-footer__social social">
-          <b class="visually-hidden">Мы есть в соцсетях!</b>
-          <ul class="social__list">
-            <li class="social__item"><a class="social__item--instagram" href="#">Инстаграм</a></li>
-            <li class="social__item"><a class="social__item--facebook" href="#">Фейсбук</a></li>
-            <li class="social__item"><a class="social__item--twitter" href="#">Твиттер</a></li>
-          </ul>
+        <div class="container">
+          <div class="page-footer__social social">
+            <b class="visually-hidden">Мы есть в соцсетях!</b>
+            <ul class="social__list">
+              <li class="social__item"><a class="social__item--instagram" href="#">Инстаграм</a></li>
+              <li class="social__item"><a class="social__item--facebook" href="#">Фейсбук</a></li>
+              <li class="social__item"><a class="social__item--twitter" href="#">Твиттер</a></li>
+            </ul>
+          </div>
         </div>
-      <div class="designed">
-        <span class="designed__author">Разработано</span>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="designed__logo visually-hidden">HTML Academy</a>
-      </div>
+        <div class="designed container">
+          <span class="designed__author">Разработано</span>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="designed__logo">HTML Academy</a>
+        </div>
       </footer>
     </main>
-  </div>
-  <div class="modal visually-hidden">
-    <div class="modal__wrapper">
-      <h1 class="modal__title">
-        Добавить в корзину
-      </h1>
-      <span class="modal__select">Выберите размер:</span>
-      <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
-        <input class="modal__size modal__size--small" type="radio" name="size" id="small" value="small"><label for="small">S</label>
-        <input class="modal__size modal__size--medium" type="radio" name="size" id="medium" value="medium"><label for="medium">M</label>
-        <input class="modal__size modal__size--large" type="radio" name="size" id="large" value="large"><label for="large">L</label>
-        <input class="modal__submit" type="submit" value="Добавить">
-      </form>
+    <div class="modal visually-hidden">
+      <div class="modal__wrapper"> <!-- or container?-->
+        <h1 class="modal__title">
+          Добавить в корзину
+        </h1>
+        <span class="modal__select">Выберите размер:</span>
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="POST">
+          <input class="modal__size modal__size--small" type="radio" name="size" id="small" value="small"><label for="small">S</label>
+          <input class="modal__size modal__size--medium" type="radio" name="size" id="medium" value="medium"><label for="medium">M</label>
+          <input class="modal__size modal__size--large" type="radio" name="size" id="large" value="large"><label for="large">L</label>
+          <input class="modal__submit" type="submit" value="Добавить">
+        </form>
+      </div>
     </div>
-  </div>
   </body>
 </html>
