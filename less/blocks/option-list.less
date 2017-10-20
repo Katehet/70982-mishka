@@ -1,8 +1,8 @@
-.main-nav {
-  display: block;
+.option-list {
+  display: inline-block;
   min-width: 320px;
 }
-.main-nav__item {
+.option-list__item {
   display: inline-block;
   font-family: "Open Sans", sans-serif;
   font-size: 17px;
@@ -10,14 +10,8 @@
   line-height: 24px;
   text-decoration: none;
 }
-.main-nav__toggle {
-  display: none;
-}
 @media (min-width: 294px) and (max-width: 767px) {
-  header::after {
-
-  }
-  .main-nav {
+  .option-list {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -26,17 +20,16 @@
   }
 }
 @media (min-width: 768px) {
-  .main-nav {
-    position: relative;
+  .option-list {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-end;
+    position: absolute;
+    right: 16px;
+    top: -58px;
   }
-  .main-nav__toggle {
-    display: none;
-  }
-  .main-nav__item {
+  .option-list__item {
     min-width: 170px;
   }
 }

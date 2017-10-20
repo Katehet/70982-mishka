@@ -1,11 +1,40 @@
-.submenu {
+.submenu__item {
+  text-decoration: none;
+}
+.submenu__interior,
+.submenu__toys {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  min-height: 206px;
-  font-weight: bold;
-  font-size: 19px;
-  line-height: 24px;
-  outline: 2px solid #00d455;
-  background-color: #63d1bb;
+  justify-content: center;
+  align-items: center;
+  min-height: 102px;
+  min-width: 320px;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+.submenu__interior {
+  background-color: #64d1bc;
+}
+.submenu__toys {
+  background-color: #5dc9b7;
+}
+@media (min-width: 320px){
+  .submenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .submenu {
+    flex-direction: row;
+    position: absolute;
+    margin: 0 auto;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 740px;
+  }
 }

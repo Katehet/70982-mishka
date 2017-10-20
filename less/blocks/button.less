@@ -1,7 +1,6 @@
 .button {
-  display: inline-block;
+  display: block;
   text-decoration: none;
-  align-self: center;
   width: 260px;
   padding: 17px;
   color: #444444;
@@ -13,4 +12,10 @@
   border: 2px solid #444444;
   background-color: #ffffff;
   box-sizing: border-box;
+  margin-bottom: 36px;
+}
+@media (min-width: 294px) and (max-width: 767px) {
+  .button {
+    align-self: center;
+  }
 }

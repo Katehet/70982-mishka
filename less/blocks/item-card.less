@@ -1,8 +1,52 @@
 .item-card {
-  display: flex;
-  flex-direction: column;
-  min-height: 756px;
-  padding-bottom: 32px;
-  outline: 2px solid #03a9f4;
+  position: relative;
   box-sizing: border-box;
+}
+@media (min-width: 768px) {
+  .item-card {
+    min-height: 626px;
+  }
+  .item-card__name {
+    font-size: 44px;
+    padding-top: 25px;
+  }
+  .item-card__advert {
+    position: absolute;
+    width: 70px;
+    right: 49px;
+    top: 60px;
+    font-size: 17px;
+    line-height: 17px;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .item-card__description {
+    width: 300px;
+    margin-top: 26px;
+    margin-bottom: 35px;
+    line-height: 30px;
+  }
+  .item-card__table {
+    font-size: 15px;
+    line-height: 20px;
+    font-family: "Open Sans", sans-serif;
+    width: 300px;
+    margin-bottom: 57px;
+    border-collapse: collapse;
+  }
+  .item-card__table td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .item-card__image {
+    position: absolute;
+    right: 22px;
+    top: 155px;
+    z-index: -1;
+  }
+  .item-card__book {
+    padding: 14px 20px;
+    width: 294px;
+  }
 }

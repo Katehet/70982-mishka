@@ -1,0 +1,19 @@
+.promo {
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 294px) and (max-width: 767px) {
+  .promo {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .promo__promo-left {
+    display: none;
+  }
+  .promo__delivery-free {
+    position: absolute;
+    right: 16px;
+    top: 18px;
+  }
+}

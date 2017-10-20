@@ -1,0 +1,61 @@
+.contacts__map-image {
+  position: relative;
+  margin-bottom: 31px;
+}
+.contacts__contact-us {
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 294px) and (max-width: 767px) {
+  .contacts__title {
+    margin-top: 84px;
+  }
+  .contacts__map-image {
+    margin-bottom: 31px;
+  }
+}
+@media (min-width: 768px) {
+  .contacts {
+    position: relative;
+  }
+  .contacts__title {
+    margin-top: 63px;
+    font-size: 46px;
+    line-height: 46px;
+    font-family: "Open Sans", sans-serif;
+  }
+   .contacts__title::after {
+    content: url("../img/flag.svg");
+    position: absolute;
+    right: 23px;
+    top: 46px;
+  }
+  .contacts__block {
+    display: flex;
+    align-items: baseline;
+  }
+  .contacts__info {
+    width: 65px;
+  }
+  .contacts__email {
+    width: 220px;
+    margin-left: 6px;
+  }
+  .contacts__info {
+    width: 65px;
+    margin-left: 10px;
+  }
+  .contacts__address {
+    width: 229px;
+    margin-left: 14px;
+  }
+  .contacts__map-image {
+    margin-top: 53px;
+    margin-bottom: 48px;
+  }
+  .contacts__contact-us {
+    margin: 0 auto;
+    margin-bottom: 57px;
+    padding: 14px 20px;
+  }
+}
